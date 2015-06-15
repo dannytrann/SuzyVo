@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, p {
+    color: #727272;
+}
+
+.section-header {
+    font-size: 8em;
+    font-weight: 100;
+}
+
+@media (max-width: 800px) {
+    .section-header {
+        font-size: 6em;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 800px) {
+    .section-header {
+        font-size: 3em;
+        font-weight: 100;
+    }
+}
+
+#footer {
+    min-height: 25vh;
+    background-color: #B3E5FC;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+/*# sourceMappingURL=style.css.map */

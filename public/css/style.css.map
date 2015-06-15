@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "mappings": "AACA,qBAAqB;EACnB,KAAK,ECKU,OAAO;;ADHxB,eAAe;EACb,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG;;AAClB,yBAAyB;EAEvB,eAAe;IACb,SAAS,EAAE,GAAG;IACd,WAAW,EAAE,GAAG;AACpB,yBAAyB;EAEvB,eAAe;IACb,SAAS,EAAE,GAAG;IACd,WAAW,EAAE,GAAG;AEhBpB,OAAO;EACL,UAAU,EAAE,IAAI;EAChB,gBAAgB,EDCI,OAAO;;AEE7B,IAAI;EACF,WAAW,EFNN,QAAQ",
+  "sources": [
+    "_static.sass",
+    "_variables.sass",
+    "footer.sass",
+    "style.sass"
+  ],
+  "names": [],
+  "file": "style.css"
+}
