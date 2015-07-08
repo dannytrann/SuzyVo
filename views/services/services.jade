@@ -1,0 +1,38 @@
+div.row(ng-controller='ServiceController as serviceCtrl' ng-init='tab = 1')
+    h1.card.text-center Our Services
+    div.col.s12
+        ul.tabs.main-tabs
+            li.tab.col.s3
+                a.active(href='' ng-class='{ active: tab == 1}' ng-click='tab = 1') Cosmetic Tatooing
+            li.tab.col.s3
+                a(href='', ng-class='{ active: tab == 2}' ng-click='tab = 2') Skin Revision
+        div.service(ng-if='tab == 1')
+            div.col.s12
+                div.col.s12.m10.offset-m1
+                    h2 Cosmetic Tatooing
+                    p {{serviceCtrl.getServiceDesc(0)}}
+            div#accordion.panel-group
+                div.panel.panel-default
+                    div#service-body(ng-repeat='service in serviceCtrl.services[0].options' ng-init='iconOn = true')
+                        div.panel-heading
+                            h4.panel-title
+                                a(href='javascript:;' ng-click='iconOn = !iconOn' ng-id='{{service.id}}' data-toggle='collapse' data-parent='#accordion' data-target='#{{service.id}}')
+                                    i.mdi-navigation-expand-more.small(ng-if='iconOn')
+                                    i.mdi-navigation-expand-less.small(ng-if='!iconOn')
+                                    span {{service.name}}
+                        div.panel-collapse.collapse.out(ng-attr-id='{{service.id}}')
+                            div.panel-body
+                                div.col.s12.m4
+                                    p {{service.description}}
+                                div#service-img.col.s12.m8
+                                    h2 Before &amp; After
+                                    img(ng-repeat='image in service.images' ng-src="{{'/'+image}}")
+        div#service-2(ng-if='tab == 2')
+            div.col.s12.m4
+                h2 Skin Revision
+                p {{serviceCtrl.getServiceDesc(1)}}
+            div.row.col.s12.m8
+                div.col.s12.m4(ng-repeat='service in serviceCtrl.services[1].options')
+                    div.card(back-img="{{'/'+service.image}}")
+                        div.card-content.text-center
+                            span#service-card.card-title {{service.name}}

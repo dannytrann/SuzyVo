@@ -1,7 +1,231 @@
-//main.scss
-@import '_variables'
-@import '_static'
-@import 'footer'
+$main-font: 'Roboto', sans-serif
+$theme-color: #00BCD4
+$cool-grey: #F6F6F6
 
 body
-  font-family: $font
+  position: relative
+  h1
+    font-family: $main-font
+
+.row
+  margin-bottom: 0
+
+a:hover, a:visited, a:link, a:active
+  text-decoration: none
+//              Header
+#header
+  position: fixed
+  width: 100%
+  z-index: 1000
+
+#inner-header
+  .brand-logo
+    margin-left: 20px
+  a:hover
+    text-decoration: none
+    color: darken(pink, 20)
+  a
+    color: $theme-color
+
+//              Welcome
+.welcome
+  background-color: $theme-color
+  position: relative
+  height: 100vh
+  z-index: 9
+  i
+    text-align: center
+    color: white
+  i:hover
+    text-shadow: 0 0 20px white
+    -webkit-transition: all 500ms ease-out
+    -moz-transition: all 500ms ease-out
+    -o-transition: all 500ms ease-out
+    transition: all 500ms ease-out
+
+  #call-to-action
+    margin-top: 1vh
+  .card-content, .card-title
+    color: $theme-color
+
+#catch-phrase
+  margin-top: 25vh
+  a
+    color: $theme-color
+    margin-top: 10px
+    width: 200px
+  #inner-catch-phrase
+    p
+      font-size: 18px
+
+    h1
+      font-size: 80px
+      font-style: normal
+      font-weight: 100
+      letter-spacing: -3px
+
+@media (max-width: 500px)
+  #catch-phrase
+    #inner-catch-phrase
+      p
+        font-size: 15px
+      h1
+        font-size: 60px
+  #catch-phrase
+    margin-top: 60px
+
+//              About
+#about
+  padding-top: 50px
+  min-height: 100vh
+  position: relative
+  background-color: $cool-grey
+  z-index: 10
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, .2)
+  .card-content
+    color: #757575
+    font-size: 1em
+  .card-title
+    color: $theme-color
+//              Services
+#services
+  min-height: 100vh
+  a, h1
+    color: $theme-color
+  h1
+    font-weight: 200
+  a
+    font-size: 2em
+    font-weight: 100
+  a:hover
+    color: pink
+    i
+      color: pink
+  p
+    color: #757575
+    font-size: 1.2em
+  img
+    height: 200px
+  h2
+    text-align: center
+    color: $theme-color
+    font-weight: 100
+  .main-tabs
+    .indicator
+      width: 50%
+  @media (max-width: 500px)
+    h1
+      font-size: 40px
+    .tabs
+      a
+        font-size: 11px
+
+#service-img
+  text-align: center
+
+#service-2
+  .card-content
+    background-color: rgba(0, 0, 0, .2)
+    height: 150px
+//              Gallery
+#gallery
+  min-height: 100vh
+  h1
+    font-weight: 100
+    color: $theme-color
+//              Testimonials
+#testimonials
+  min-height: 100vh
+  background-color: $theme-color
+  #inner-testimonials
+    h1
+      font-weight: 200
+      color: white
+    #instructions
+      p
+        color: #ffffff
+        font-weight: 100
+        font-size: 25px
+    .btn
+      background-color: white
+      color: #37474f
+      height: 70px
+      font-size: 25px
+      font-weight: 100
+    h5
+      color: #37474f
+      font-size: 10px
+      position: relative
+      top: -20px
+    #testLocation
+      color: $theme-color
+      font-size: 20px
+  @media (max-width: 500px)
+    h1
+      font-size: 40px
+    #inner-testimonials
+      .btn
+        font-size: 18px
+      h5
+        font-size: 8px
+
+//              Contacts
+#inner-contacts
+  min-height: 100vh
+  h1
+    font-weight: 200
+    color: $theme-color
+  #contact-right
+    h1
+      font-size: 25px
+      font-weight: 300
+      color: $theme-color
+    a
+      color: $theme-color
+      padding-top: 5px
+  #contact-left
+    h1
+      font-size: 25px
+      font-weight: 300
+      color: $theme-color
+    p
+      font-size: 15px
+      font-weight: 200
+      color: #464646
+  #contact-footer
+    p
+      font-size: 20px
+      font-weight: 200
+      color: $theme-color
+
+@media (max-width: 500px)
+  #inner-contacts
+    h1
+      font-size: 40px
+    #contact-right
+      h1
+        font-size: 25px
+    #contact-footer
+      p
+        font-size: 15px
+//              Footer
+footer
+  position: relative
+  height: 150px
+  clear: both
+  width: 100%
+
+#page-footer1
+  background-color: $theme-color
+  li
+    list-style-type: none
+
+.footer-copyright
+  .container
+    color: $theme-color
+//RANDOMS
+.waves-effect.waves-pink .waves-ripple
+  background-color: $theme-color
+
+.header-margin
+  height: 80px

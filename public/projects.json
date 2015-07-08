@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "name": "Teamhuddle",
+    "description": "Teamhuddle is a community based solution geared to bring the world of athletics closer together. How do we stay physically active in this busy world? Everybody wants to play a sport with a familiar face in a community they trust, so this social initiative allows you to find the players you love playing with, and the sports you love to play. It's that simple.",
+    "logo": "tm.png",
+    "type": "Website",
+    "images": [
+      "th1.jpg",
+      "th2.png",
+      "th3.png"
+    ],
+    "link": "http://www.teamhuddle.ca"
+  },
+  {
+    "id": 2,
+    "name": "Spareplayers",
+    "description": "An industry project that was overlooked by Darryl Barr . SparePlayers is a web app that connects teams with spare players that are searching for a game to play. Created with C#, Asp.NET and managed by SQLServer Management Studio.",
+    "logo": "sp.png",
+    "type": "Website",
+    "images": [
+      "spareplayers1.png",
+      "spareplayers2.png",
+      "spareplayers3.png"
+    ],
+    "link": "http://www.spareplayers.ca"
+  },
+  {
+    "id": 3,
+    "name": "Care-app",
+    "description": "Project was overlooked by Tejinder Randhawa. Care-App is a cross-platform app that connected nurses with their daily schedule and task so getting to their hospital patients is more convenient.",
+    "logo": "ca.png",
+    "type": "Web and Mobile App",
+    "images": [
+      "care-app1.png",
+      "care-app2.png",
+      "care-app3.png",
+      "care-app4.png"
+    ],
+    "link": ""
+  },
+  {
+    "id": 4,
+    "name": "Trends4Friends",
+    "description": "A Web development project that was done to complete COMP 1536 at BCIT. The main objective for the project was to see how people react in working on a team and how well they work together. The most he got out of this was how to organize a working schedule and communicating with the teammates so the code can be implemented smoothly. My responsibilities was the task of a junior web developer.",
+    "logo": "t4f.png",
+    "type": "Website",
+    "images": [
+      "t4f1.png",
+      "t4f2.png",
+      "t4f3.png"
+    ],
+    "link": "http://trends4friends.hostei.com/default.php"
+  },
+  {
+    "id": 5,
+    "name": "Bus Whisperer",
+    "description": "An Android app that allows the user to find out when the bus is coming. Each bus stop in the city of Vancouver comes with a bus stop number. This app allows the user to organize all those bus stops  and retrieve those times without using any DATA. Cool right ?",
+    "logo": "bw.png",
+    "type": "Website",
+    "images": [
+      "buswhisperer1.png",
+      "buswhisperer2.png",
+      "buswhisperer3.png"
+    ],
+    "link": ""
+  },
+  {
+    "id": 6,
+    "name": "Amsterdam",
+    "description": "A web development project that targeted tourist that are interested in going to Amsterdam. Technologies that were used are HTML5, CSS3, Bootstrap3, CodeIgniter Framework, MySQL. This project excersized techniques to optimize a web page using the CodeIgniter framework.",
+    "logo": "amsterdam-logo.png",
+    "type": "Website",
+    "images": [
+      "amsterdam1.png",
+      "amsterdam2.png",
+      "amsterdam3.png"
+    ],
+    "link": ""
+  },
+  {
+    "id": 7,
+    "name": "The Face Studio",
+    "description": "A company run Tuyen Nguyen who specializes in cosmetic tattoos and revisions. This ia prime example of a MEAN stack.",
+    "logo": "tfs.jpg",
+    "type": "Website",
+    "images": [
+    ],
+    "link": "/thefacestudio"
+  }
+]

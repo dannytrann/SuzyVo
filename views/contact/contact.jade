@@ -1,0 +1,50 @@
+div#inner-contacts(ng-controller='ContactController as contactCtrl')
+    section.text-center
+        h1 Contact Info
+    div.row
+        div#contact-left.col.s12.m6.text-center
+            div.row
+                h1 Office Hours
+                p Weekdays 9am &ndash; 4:30pm
+                h1 Address
+                p 10312 164A St    (Fraser Heights)
+                p Surrey, BC
+                p V4n 5m4
+                h1 Contact Info
+                p Office  604.496.BROW (2769)
+                p Cell  778.238.2826
+                p info@thefacestudio.ca
+                p www.thefacestudio.ca
+        div#contact-right.col.s12.m6
+            div.row.text-center
+                h1 Leave a message
+            form.col.s12(ng-submit="contactCtrl.submit(email)")
+                div.row
+                    div.input-field.col.s6
+                        input#first_name.validate(type="text" ng-model="email.firstname" name="fname")
+                        label(for="first_name") First Name
+                    div.input-field.col.s6
+                        input#last_name.validate(type='text' ng-model='email.lastname' name='lname')
+                        label(for='last_name') Last Name
+                div.row
+                    div.input-field.col.s12
+                        input#email.validate(type='email' ng-model='email.email' name='email')
+                        label(for='email') Email
+                div.row
+                    div.input-field.col.s12
+                        input#username.validate(type='text' ng-model='email.subject' name='subject')
+                        label(for='username') Subject
+                div.row
+                    div.input-field.col.s12
+                        textarea.materialize-textarea(ng-model='email.message' name='message')
+                        label Your Message
+                div.row.pull-right
+                    button.btn.waves-effect.waves-teal(type='submit' name='action') Submit
+                        i.mdi-content-send.right
+        div.row
+            div.col.s10.offset-s1
+                hr
+    div#contact-footer.row.text-center
+        div.col.s8.offset-s2
+            p Contact us for a Free consultation!
+            p A credit card is required for booking appointments. Without 24 hour notice, cancellations or no-shows will be subject to 50% of the service fee.

@@ -1,23 +1,40 @@
 doctype
-html(ng-app="dannyhaitran")
-    header
-        meta(name="viewport" content="width=device-width" initial-scale=1)
-        title Suzy Vo Hair Salon
-        link(rel='stylesheet', href='css/materialize.min.css')
-        //link(rel='stylesheet', href='css/bootstrap.min.css')
-        link(rel='stylesheet', href='css/style.css')
-    body(ng-controller="MainController as mainCtrl")
-        div.row
-            div.col.s12
-                h1.col.s1 Page is Under Construction
-            div.col.s12
-                h3.col.s3 c. 778.778.7778
-        script(language="JavaScript" type="text/javascript" src="/scripts/angular/angular.min.js")
-        script(language="JavaScript" type="text/javascript" src="/scripts/angular-route/angular-route.min.js")
-        script(language="JavaScript" type="text/javascript" src='/scripts/ngSmoothScroll/angular-smooth-scroll.js')
-        script(language="JavaScript" type="text/javascript" src="js/jquery-1.11.2.js")
-        //script(language="JavaScript" type="text/javascript" src="js/bootstrap.min.js")
+html(ng-app='thefacestudio')
+    // <![endif]
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title The Face Studio | Permanent Makeup and Skin Revisions Inc.
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='stylesheet', href='/scripts/angular-material/angular-material.css')
+        link(rel='stylesheet', href='/css/app.css')
+        link(rel='stylesheet', href='/css/bootstrap.css')
+        link(rel='stylesheet', href='/css/materialize.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+        link(rel='stylesheet', href='/css/statics.css')
+    body(ng-controller='MainController')
+        #header.z-depth-1
+            include header.jade
+        #welcome.z-depth-2
+            include welcome/welcome.jade
+        #about.z-depth-2(name='about')
+            include about/about.jade
+        #services
+            include services/services.jade
+        // <div ng-include="'gallery/gallery.html'" class="z-depth-2" id="gallery"></div>
+        #testimonials.z-depth-1
+            include testimonials/testimonials.jade
+        #contacts
+            include contact/contact.jade
+        #footer.z-depth-1(name='footer')
+            include footer.jade
+        script(language="JavaScript" type="text/javascript" src="/js/jquery-1.11.2.js")
+        script(language="JavaScript" type="text/javascript" src="/js/bootstrap.js")
         script(language="JavaScript" type="text/javascript" src="js/materialize.min.js")
-        script(language="JavaScript" type="text/javascript" src="js/parallax.min.js")
-        script(language="JavaScript" type="text/javascript" src="controllers/projects.js")
-        script(language="JavaScript" type="text/javascript" src="controllers/core.js")
+        script(language="JavaScript" type="text/javascript" src="/scripts/angular/angular.js")
+        script(language="JavaScript" type="text/javascript" src='/scripts/ngSmoothScroll/angular-smooth-scroll.js')
+        script(language="JavaScript" type="text/javascript" src="/scripts/angular-route/angular-route.min.js")
+        script(language="JavaScript" type="text/javascript" src="/js/parallax.min.js")
+        script(language="JavaScript" type="text/javascript" src="/controllers/main.controller.js")
+          
