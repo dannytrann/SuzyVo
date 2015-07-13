@@ -1,5 +1,5 @@
 $main-font: 'Roboto', sans-serif
-$theme-color: #00BCD4
+$theme-color: #26A69A
 $cool-grey: #F6F6F6
 
 body
@@ -30,6 +30,7 @@ a:hover, a:visited, a:link, a:active
 //              Welcome
 .welcome
   background-color: $theme-color
+  background-image: url("../img/photo-background.jpg")
   position: relative
   height: 100vh
   z-index: 9
@@ -83,6 +84,7 @@ a:hover, a:visited, a:link, a:active
   z-index: 10
   box-shadow: 0 -1px 20px rgba(0, 0, 0, .2)
   .card-content
+
     color: #757575
     font-size: 1em
   .card-title
@@ -123,10 +125,11 @@ a:hover, a:visited, a:link, a:active
 #service-img
   text-align: center
 
-#service-2
+
+.service-2
   .card-content
-    background-color: rgba(0, 0, 0, .2)
-    height: 150px
+    background-color: rgba(0, 0, 0, .2) !important
+    height: 150px !important
 //              Gallery
 #gallery
   min-height: 100vh

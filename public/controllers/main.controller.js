@@ -4,8 +4,23 @@
 
 // Declare app level module which depends on views, and components
 
-var app = angular.module('thefacestudio', ['smoothScroll']);
+var app = angular.module('rushsalon', ['smoothScroll', 'ngRoute']);
 
+app.config(['$routeProvider',
+    function ($routeProvider) {
+        $routeProvider.
+            when('/', {
+                templateUrl: '/views/content.jade',
+                controller: 'MainController'
+            }).
+            when('/stylists', {
+                templateUrl: '/views/stylists/stylists.jade',
+                controller: 'StylistController'
+            }).
+            otherwise({
+                redirectTo: '/views/content.jade'
+            });
+    }]);
 app.controller('MainController', function ($scope) {
     $(document).ready(function () {
         $('.collapsible').collapsible({
@@ -14,7 +29,19 @@ app.controller('MainController', function ($scope) {
         $(".button-collapse").sideNav();
         $('ul.tabs').tabs();
         $('select').material_select();
+
     });
+    $scope.tab = 1;
+    this.tabClick = function (tab) {
+        console.log("Hello World");
+        if (tab == 1) {
+            $scope.tab = 1;
+            $('ul.tabs').tabs('select_tab', 'tab1');
+        } else {
+            $scope.tab = 2;
+            $('ul.tabs').tabs('select_tab', 'tab2');
+        }
+    }
 });
 app.controller('ScrollController', ['$scope', '$location', '$anchorScroll',
     function ($scope, $location, $anchorScroll) {
@@ -28,6 +55,10 @@ app.controller('ScrollController', ['$scope', '$location', '$anchorScroll',
         };
     }]);
 app.controller('ServiceController', ['$http', function ($http) {
+    $(document).ready(function () {
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+    });
     var services = this;
     var icon = false;
     services.services = [];
@@ -43,6 +74,12 @@ app.controller('ServiceController', ['$http', function ($http) {
             serviceDescription = this.services[1].description;
         return serviceDescription;
     }
+    this.openModal = function (id) {
+        console.log(id);
+        $(document).ready(function () {
+            $(id).openModal();
+        });
+    };
 }]);
 var testTicket = {
     name: "",
@@ -87,3 +124,6 @@ app.directive('backImg', function () {
 app.controller('GalleryController', ['$http', function () {
 
 }]);
+app.controller('StylistController', ['$http', function () {
+
+}])

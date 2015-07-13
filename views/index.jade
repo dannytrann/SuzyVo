@@ -1,10 +1,10 @@
 doctype
-html(ng-app='thefacestudio')
+html(ng-app='rushsalon')
     // <![endif]
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
-        title The Face Studio | Permanent Makeup and Skin Revisions Inc.
+        title Rush Salon | Your Local Hair Experts
         meta(name='description', content='')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         link(rel='stylesheet', href='/scripts/angular-material/angular-material.css')
@@ -13,20 +13,11 @@ html(ng-app='thefacestudio')
         link(rel='stylesheet', href='/css/materialize.min.css')
         link(rel='stylesheet', href='/css/style.css')
         link(rel='stylesheet', href='/css/statics.css')
-    body(ng-controller='MainController')
+    body(ng-controller='MainController as mainCtrl')
         #header.z-depth-1
             include header.jade
-        #welcome.z-depth-2
-            include welcome/welcome.jade
-        #about.z-depth-2(name='about')
-            include about/about.jade
-        #services
-            include services/services.jade
-        // <div ng-include="'gallery/gallery.html'" class="z-depth-2" id="gallery"></div>
-        #testimonials.z-depth-1
-            include testimonials/testimonials.jade
-        #contacts
-            include contact/contact.jade
+        #content
+            include content.jade
         #footer.z-depth-1(name='footer')
             include footer.jade
         script(language="JavaScript" type="text/javascript" src="/js/jquery-1.11.2.js")
@@ -35,6 +26,7 @@ html(ng-app='thefacestudio')
         script(language="JavaScript" type="text/javascript" src="/scripts/angular/angular.js")
         script(language="JavaScript" type="text/javascript" src='/scripts/ngSmoothScroll/angular-smooth-scroll.js')
         script(language="JavaScript" type="text/javascript" src="/scripts/angular-route/angular-route.min.js")
+        script(language="JavaScript" type="text/javascript" src='/scripts/ngSmoothScroll/angular-smooth-scroll.js')
         script(language="JavaScript" type="text/javascript" src="/js/parallax.min.js")
         script(language="JavaScript" type="text/javascript" src="/controllers/main.controller.js")
           

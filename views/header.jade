@@ -1,0 +1,31 @@
+div.navbar-fixed#navbar
+    nav#inner-header
+        div.nav-wrapper#navbar-block.white
+            a.brand-logo.offset-s2(href='#', scroll-to='welcome') Rush Salon YVR
+            a(href="#" data-activates="mobile-demo").button-collapse.hidden-sm.hidden-md.hidden-lg
+                i.mdi-navigation-menu
+            ul#nav-mobile.right.hidden-xs
+                li
+                    a(href='#', scroll-to='about', offset='30') About
+                li
+                    a(href='#', scroll-to='services', offset='60', ng-click='mainCtrl.tabClick(1)') Services
+                li
+                    a(href='#', scroll-to='services', offset='60', ng-click='mainCtrl.tabClick(2)') Products
+                li
+                    a(href='#', scroll-to='testimonials', offset='75') Testimonials
+                li
+                    a(href="#/stylist") Stylist
+                li
+                    a(href='#/', scroll-to='contacts', offset='75') Contact
+            ul#mobile-demo.right.side-nav.hidden-sm.hidden-md.hidden-lg
+                li
+                    a(href='#', scroll-to='about', offset='30') About
+                li
+                    a(href='#', scroll-to='services', offset='60', ng-click='tab = 1') Services
+                li
+                    a(href='#', scroll-to='services', offset='60', ng-click='tab = 2') Products
+                // <li><a href="#" scroll-to="gallery" offset="80">Gallery</a></li>
+                li
+                    a(href='#', scroll-to='testimonials', offset='75') Testimonials
+                li
+                    a(href='#/', scroll-to='contacts', offset='75') Contact

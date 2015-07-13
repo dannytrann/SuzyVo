@@ -16,14 +16,17 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {
     console.log('DB Status: Connected')// yay!
 });
+app.engine('jade', require('jade').__express);
+app.set('view engine', 'jade');
+
 app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
+app.use('/views', express.static(__dirname + '/views/'));
 app.use(morgan('dev'));                                         // log every request to the console
 app.use(bodyParser.urlencoded({'extended': 'true'}));            // parse application/x-www-form-urlencoded
 app.use(bodyParser.json());                                     // parse application/json
 app.use(bodyParser.json({type: 'application/vnd.api+json'})); // parse application/vnd.api+json as json
 app.use(methodOverride());
-app.set('view engine', 'jade');
 
 // Define model ======================================
 var Project = mongoose.model('project', {
@@ -43,8 +46,8 @@ app.get('/', function (req, res) {
     res.render('index.jade', {});
 });
 
-
 //API
+
 //Get all projects
 app.get('/api/projects', function (req, res) {
 

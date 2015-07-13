@@ -20,10 +20,12 @@ a:hover, a:visited, a:link, a:active {
   text-decoration: none;
   color: #ff5a77; }
 #inner-header a {
-  color: #00BCD4; }
+  color: #26A69A;
+}
 
 .welcome {
-  background-color: #00BCD4;
+  background-color: #26A69A;
+  background-image: url("../img/photo-background.jpg");
   position: relative;
   height: 100vh;
   z-index: 9; }
@@ -39,12 +41,13 @@ a:hover, a:visited, a:link, a:active {
   .welcome #call-to-action {
     margin-top: 1vh; }
   .welcome .card-content, .welcome .card-title {
-    color: #00BCD4; }
+    color: #26A69A;
+  }
 
 #catch-phrase {
   margin-top: 25vh; }
   #catch-phrase a {
-    color: #00BCD4;
+    color: #26A69A;
     margin-top: 10px;
     width: 200px; }
   #catch-phrase #inner-catch-phrase p {
@@ -74,12 +77,14 @@ a:hover, a:visited, a:link, a:active {
     color: #757575;
     font-size: 1em; }
   #about .card-title {
-    color: #00BCD4; }
+    color: #26A69A;
+  }
 
 #services {
   min-height: 100vh; }
   #services a, #services h1 {
-    color: #00BCD4; }
+    color: #26A69A;
+  }
   #services h1 {
     font-weight: 200; }
   #services a {
@@ -96,7 +101,7 @@ a:hover, a:visited, a:link, a:active {
     height: 200px; }
   #services h2 {
     text-align: center;
-    color: #00BCD4;
+    color: #26A69A;
     font-weight: 100; }
   #services .main-tabs .indicator {
     width: 50%; }
@@ -109,19 +114,22 @@ a:hover, a:visited, a:link, a:active {
 #service-img {
   text-align: center; }
 
-#service-2 .card-content {
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 150px; }
+.service-2 .card-content {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  height: 150px !important;
+}
 
 #gallery {
   min-height: 100vh; }
   #gallery h1 {
     font-weight: 100;
-    color: #00BCD4; }
+    color: #26A69A;
+  }
 
 #testimonials {
   min-height: 100vh;
-  background-color: #00BCD4; }
+  background-color: #26A69A;
+}
   #testimonials #inner-testimonials h1 {
     font-weight: 200;
     color: white; }
@@ -141,7 +149,7 @@ a:hover, a:visited, a:link, a:active {
     position: relative;
     top: -20px; }
   #testimonials #inner-testimonials #testLocation {
-    color: #00BCD4;
+    color: #26A69A;
     font-size: 20px; }
   @media (max-width: 500px) {
     #testimonials h1 {
@@ -155,18 +163,21 @@ a:hover, a:visited, a:link, a:active {
   min-height: 100vh; }
   #inner-contacts h1 {
     font-weight: 200;
-    color: #00BCD4; }
+    color: #26A69A;
+  }
   #inner-contacts #contact-right h1 {
     font-size: 25px;
     font-weight: 300;
-    color: #00BCD4; }
+    color: #26A69A;
+  }
   #inner-contacts #contact-right a {
-    color: #00BCD4;
+    color: #26A69A;
     padding-top: 5px; }
   #inner-contacts #contact-left h1 {
     font-size: 25px;
     font-weight: 300;
-    color: #00BCD4; }
+    color: #26A69A;
+  }
   #inner-contacts #contact-left p {
     font-size: 15px;
     font-weight: 200;
@@ -174,7 +185,8 @@ a:hover, a:visited, a:link, a:active {
   #inner-contacts #contact-footer p {
     font-size: 20px;
     font-weight: 200;
-    color: #00BCD4; }
+    color: #26A69A;
+  }
 
 @media (max-width: 500px) {
   #inner-contacts h1 {
@@ -190,15 +202,18 @@ footer {
   width: 100%; }
 
 #page-footer1 {
-  background-color: #00BCD4; }
+  background-color: #26A69A;
+}
   #page-footer1 li {
     list-style-type: none; }
 
 .footer-copyright .container {
-  color: #00BCD4; }
+  color: #26A69A;
+}
 
 .waves-effect.waves-pink .waves-ripple {
-  background-color: #00BCD4; }
+  background-color: #26A69A;
+}
 
 .header-margin {
   height: 80px; }
