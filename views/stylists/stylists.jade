@@ -1,2 +1,65 @@
-div.row(ng-controller='ServiceController as serviceCtrl' ng-init='tab = 1')
-    h1 Stylists
+div.row(ng-controller='ServiceController as serviceCtrl')
+    section.text-center
+        h1 Stylists
+    section.row.col.s12
+        //Suzy
+        //Photo
+        .col.s12.l4
+            img(src="img/styles.jpg")
+        //Description
+        .col.s12.l8
+            h5 Suzy Vo
+            p Co-owner / Stylist
+            .btn.modal-trigger(href="#suzy") My Services
+            p Years of Experience – 9  years
+            p Current Hobbies – Modern classical music, cooking, reading, shopping & her family
+            p Favourite Product: Shu Uemura Absolu Essence and all of Kerastase products
+            p Suzy's easy going, approachable manner and open minded approach make her easy to work with. She worked and trained at Suki’s for 8 years with the teaching influence of Vidal Sassoon. Her consultations are thorough, non-intimidating and focused on her guest. This and her immense skill make her a client favorite. Suzy can work with all types of hair and is a strong technical cutter with strong finishing and upstyle skills. She loves sharing her knowledge with guests. She is a good choice for anyone. Suzy speaks English and Vietnamese.
+    section.row.col.s12
+        //Stacey
+        //photo
+        .col.s12.l8
+            h5 Stacy Minkova
+            .btn.modal-trigger(href="#stacy") My Services
+            p Co-owner/Stylist
+            p Years of Experience – 8 years
+            p Current Hobbies – Fashion, fitness, arts, travelling and healthy life styles
+            p Favourite Product: Shu Uemura Oil Cleansing Shampoo
+            p Kerastase Nectar Thermique
+            p Stacy is an amazingly talented and focused stylist. She is Vidal Sassoon trained, and worked at Suki’s for 5 years. She is easy to relate to, a great listener, and completely up to date with the latest fashions. Stacy finds inspiration from advanced training and takes classes every chance she gets. Stacy is an excellent communicator and a skilled choice for anyone who wants their hair to make a fashion statement. Stacy speaks English & Bulgarian.
+        //Description
+        .col.s12.l4.right-align
+            img(src="img/styles.jpg")
+
+
+        // Modal Structure
+        .modal.bottom-sheet#suzy
+            div.col.s12.m10.offset-m1
+                p.col.s6 Men's Haircuts
+                p.col.s6 $70
+                p.col.s6  Women's Haircuts
+                p.col.s6  $70
+                p.col.s6  Styling
+                p.col.s6  $50
+                p.col.s6  Updo
+                p.col.s6  $80
+                p.col.s6  Smoothing Treatment
+                p.col.s6  $ Quoted
+                p.col.s6  Color Texture
+                p.col.s6  $ Quoted
+                .col.s12.action-bar
+                    a.waves-effect.waves-green.btn-flat.modal-action.modal-close(href='#' ng-click="serviceCtrl.closeModal()") Close
+        .modal.bottom-sheet#stacy
+            div.col.s12.m10.offset-m1
+                p.col.s6  Men's Haircuts
+                p.col.s6  $60
+                p.col.s6  Women's Haircuts
+                p.col.s6  $60
+                p.col.s6  Styling
+                p.col.s6  $40
+                p.col.s6  Updos
+                p.col.s6  $70
+                p.col.s6  Color Texture
+                p.col.s6  $ Quoted
+                .col.s12.action-bar
+                    a.waves-effect.waves-green.btn-flat.modal-action.modal-close(href='#' ng-click="serviceCtrl.closeModal()") Close

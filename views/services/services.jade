@@ -9,26 +9,31 @@ div.row(ng-controller='ServiceController as serviceCtrl')
         div.service-2.service(id="tab1")
             div.col.s12
                 h2 Services
-                p {{serviceCtrl.getServiceDesc(0)}}
-            .col.s6.m3(ng-repeat='service in serviceCtrl.services[0].options')
+                p {{serviceCtrl.getServiceDesc(1)}}
+            .col.s12.m6.l4(ng-repeat='service in serviceCtrl.services[0].options')
                 a.waves-effect.waves-light.modal-trigger.col-xs-12(ng-click="serviceCtrl.openModal('#'+service.id)")
                     div.card(back-img="{{'/'+service.image}}")
                         div.card-content.text-center
                             span#service-card.card-title {{service.name}}
                 // Modal Structure
                 .modal(ng-attr-id='{{service.id}}')
-                    div.margin-top-3.margin-bottom-3.margin-right-3.margin-left-3
+                    div.col.s12.m10.offset-m1
                         h4 {{service.name}}
-                        p {{service.description}}
-                        .action-bar
-                            a.waves-effect.waves-green.btn-flat.modal-action.modal-close(href='#') Close
-        div.service-2(id="tab2")
+                        span(ng-repeat='desc in service.description')
+                            .col.s8.left-align
+                                p {{desc.title}}
+                            .col.s4.right-align
+                                p.flow-text {{desc.price}}
+                            .col.s12
+                                small {{desc.description}}
+                        .col.s12.action-bar
+                            a.waves-effect.waves-green.btn-flat.modal-action.modal-close(href='#' ng-click="serviceCtrl.closeModal()") Close
+        div.service-2.service2(id="tab2")
             div.col.s12.m4
                 h2 Products
-                p {{serviceCtrl.getServiceDesc(1)}}
+                p {{serviceCtrl.getServiceDesc(2)}}
             div.row.col.s12.m8
-                div.col.s12.m4(ng-repeat='product in serviceCtrl.services[1].options')
-                    div.card(back-img="{{'/'+product.image}}")
-                        div.card-content.text-center
-                            span#service-card.card-title {{product.name}}
+                div.col.s12(ng-repeat='product in serviceCtrl.services[1].options')
+                    img(src="{{'/'+product.image}}")
+
 

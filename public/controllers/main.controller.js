@@ -79,6 +79,7 @@ app.controller('ServiceController', ['$http', function ($http) {
         $(document).ready(function () {
             $(id).openModal();
         });
+        $('body').css('overflow', 'hidden');
     };
 }]);
 var testTicket = {

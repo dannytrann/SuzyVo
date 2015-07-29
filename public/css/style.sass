@@ -1,12 +1,11 @@
 $main-font: 'Roboto', sans-serif
 $theme-color: #26A69A
 $cool-grey: #F6F6F6
-
+$primary-text: #565656
 body
   position: relative
   h1
     font-family: $main-font
-
 .row
   margin-bottom: 0
 
@@ -17,7 +16,6 @@ a:hover, a:visited, a:link, a:active
   position: fixed
   width: 100%
   z-index: 1000
-
 #inner-header
   .brand-logo
     margin-left: 20px
@@ -26,7 +24,23 @@ a:hover, a:visited, a:link, a:active
     color: darken(pink, 20)
   a
     color: $theme-color
-
+  h1
+    font-size: 1em
+    font-family: Verdana, Geneva, sans-serif
+    font-weight: 600
+    color: black
+    letter-spacing: -5px
+    margin-top: 0px
+    margin-bottom: 0px
+    top: -10px
+    position: relative
+  h5
+    font-size: .5em
+    font-weight: 200
+    color: black
+    letter-spacing: -1px
+    top: -50px
+    position: relative
 //              Welcome
 .welcome
   background-color: $theme-color
@@ -56,39 +70,95 @@ a:hover, a:visited, a:link, a:active
     margin-top: 10px
     width: 200px
   #inner-catch-phrase
-    p
-      font-size: 18px
-
     h1
-      font-size: 80px
-      font-style: normal
-      font-weight: 100
-      letter-spacing: -3px
+      font-size: 4em
+      font-family: Verdana, Geneva, sans-serif
+      font-weight: 600
+      color: white
+      letter-spacing: -5px
+    h5
+      font-size: 2em
+      font-weight: 200
+      color: white
+      letter-spacing: -1px
+      top: -35px
+      position: relative
+    p
+      font-size: 1.5em
+      color: white
 
 @media (max-width: 500px)
   #catch-phrase
     #inner-catch-phrase
-      p
-        font-size: 15px
       h1
-        font-size: 60px
+        font-size: 2em
+        font-family: Verdana, Geneva, sans-serif
+        font-weight: 600
+        color: white
+        letter-spacing: -5pxs
+      h5
+        font-size: 1em
+        font-weight: 200
+        color: white
+        letter-spacing: -1px
+        top: -35px
+        position: relative
+      p
+        font-size: 1.2em
+        color: white
   #catch-phrase
     margin-top: 60px
-
+//              Promotion
+#promotion
+  background-image: url("../img/texture-light.jpg")
+  text-align: center
+  p
+    color: $theme-color
+    font-size: 5em
+    font-weight: 700
+    font-family: Verdana, Geneva, sans-serif
+  h1
+    color: white
+    font-family: Verdana, Geneva, sans-serif
+    font-weight: 700
+    margin-top: 0
+    font-size: 3em
+  h2
+    color: white
+    font-size: 1.6em
+    font-family: Verdana, Geneva, sans-serif
+    font-weight: 700
+    margin-top: 0
+  @media (max-width: 400px)
+    h1
+      font-size: 2em
+    h2
+      font-size: 1em
+    p
+      font-size: 3em
 //              About
 #about
-  padding-top: 50px
+  padding-top: 10px
   min-height: 100vh
   position: relative
   background-color: $cool-grey
   z-index: 10
   box-shadow: 0 -1px 20px rgba(0, 0, 0, .2)
-  .card-content
-
-    color: #757575
-    font-size: 1em
-  .card-title
-    color: $theme-color
+  h1
+    font-weight: 600
+    letter-spacing: 2px
+    font-family: Verdana, Geneva, sans-serif
+  p
+    font-size: 1.2em
+  .colored
+    h1
+      color: white
+    p
+      color: white
+    background-color: black
+  @media (max-width: 400px)
+    h1
+      font-size: 2em
 //              Services
 #services
   min-height: 100vh
@@ -115,12 +185,14 @@ a:hover, a:visited, a:link, a:active
   .main-tabs
     .indicator
       width: 50%
+  small
+    font-size: .9em
   @media (max-width: 500px)
     h1
-      font-size: 40px
+      font-size: 2em
     .tabs
       a
-        font-size: 11px
+        font-size: 1.1em
 
 #service-img
   text-align: center
@@ -129,13 +201,30 @@ a:hover, a:visited, a:link, a:active
 .service-2
   .card-content
     background-color: rgba(0, 0, 0, .2) !important
-    height: 150px !important
+    min-height: 200px !important
+
+.service2
+  .card-content
+    background-color: transparent !important
+  @media (max-width: 400px)
+    img
+      height: 150px !important
+
 //              Gallery
 #gallery
   min-height: 100vh
   h1
     font-weight: 100
     color: $theme-color
+//              Stylists
+#stylists
+  min-height: 100vh
+  background-color: white
+  h1
+    font-weight: 200
+    color: $theme-color
+  img
+    width: 350px
 //              Testimonials
 #testimonials
   min-height: 100vh

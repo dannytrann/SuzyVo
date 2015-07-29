@@ -1,111 +1,163 @@
 [
   {
-    "name": "Products",
-    "description": "Also known as micro-pigmentation or permanent makeup, semi-permanent cosmetics is a procedure of implanting coloured pigment into the dermal layer of the skin to create lasting cosmetic effects. It can be used for camouflaging imperfections such as discoloration or scarring, or simply to escape the daily application required with traditional makeup routines by mimicking the appearance of real makeup.",
+    "name": "Services",
+    "description": "",
     "tabNum": 1,
     "options": [
       {
-        "name": "Avanti",
+        "name": "Cuts",
         "id": 1,
-        "description": "Avanti professional blowdryers provide a fast, sleek and powerful blowdry that minimize both drying time and hair damage caused by heat. With a sleek, lightweight design and ergonomic handle, the Avanti blowdryer is ideal for travelling.",
-        "image": "img/cosmetic-revisions/sunspots.jpg"
+        "description": [
+          {
+            "title": "Woman's Haircuts",
+            "price": "$50 - $100",
+            "description": ""
+          },
+          {
+            "title": "Men's Haircuts",
+            "price": "$40-$90",
+            "description": ""
+          },
+          {
+            "title": "Fringe Trims",
+            "price": "$10",
+            "description": ""
+          },
+          {
+            "title": "Children 10 and under receive 30% off Stylist’s regular price\n\n",
+            "price": "",
+            "description": ""
+          },
+          {
+            "title": "",
+            "price": "",
+            "description": "**Service prices do not include taxes or gratuities and are subject to change without notice."
+          }
+        ],
+        "image": "img/cuts.jpg"
       },
       {
-        "name": "B. Vain Cosmetics",
+        "name": "Styles",
         "id": 2,
-        "description": "B.Vain is a mineral based cosmetics line that covers all your makeup needs. From 100% crushed mineral foundation to vibrant eyeshadow palettes, B.Vain is designed to both nourish your skin and leave you looking glamorous.",
-        "image": "img/cosmetic-revisions/skintag.jpeg"
+        "description": [
+          {
+            "title": "Blow Dry and Styling",
+            "price": "From $40 and up",
+            "description": ""
+          },
+          {
+            "title": "Formal Hair Styling",
+            "price": "From $70 and up",
+            "description": ""
+          },
+          {
+            "title": "Extensions",
+            "price": "From $70 and up",
+            "description": "We offer both bonded and tape-in extensions. Both services require a consultation prior to making the extension appointment.  Price is quoted after consultation.\n\n"
+          },
+          {
+            "title": "",
+            "price": "",
+            "description": "**Service prices do not include taxes or gratuities and are subject to change without notice."
+          }
+        ],
+        "image": "img/styles.jpg"
       },
       {
-        "name": "Big Sexy Hair",
+        "name": "Treatments",
         "id": 3,
-        "description": "Lakme products offer a range of styling options. From conditioning sprays to texturizing gels, Lakme gives you the products necessary to have fun with your hair while maintaining a sleek and stylish look.",
-        "image": "img/cosmetic-revisions/freckles.jpeg"
+        "description": [
+          {
+            "title": "Kérastase Treatments",
+            "price": "$20 - $75",
+            "description": ""
+          },
+          {
+            "title": "Masques",
+            "price": "$10 - $15",
+            "description": ""
+          },
+          {
+            "title": "Shampoo and conditioner service only",
+            "price": "$15",
+            "description": "These services include shampoo, conditioner and scalp massage but do not include blow-dry/style unless booked separately.\n\n"
+          },
+          {
+            "title": "",
+            "price": "",
+            "description": "**Service prices do not include taxes or gratuities and are subject to change without notice."
+          }
+        ],
+        "image": "img/treatments.jpg"
       },
       {
-        "name": "Davines",
+        "name": "Color",
         "id": 4,
-        "description": "Davines has a range of products to suit each of your hair, face and body needs. Inspired by nature, Davines uses all natural ingredients and authentic formulas, leaving your skin and hair feeling completely revived. This essential hair care uses bottles with 25% less plastic and reusable containers.",
-        "image": "img/cosmetic-revisions/ruby.jpg"
+        "description": [
+          {
+            "title": "Colour Retouch",
+            "price": "From $70 and up",
+            "description": ""
+          },
+          {
+            "title": "Colour on Virgin Hair",
+            "price": "From $150 and up",
+            "description": ""
+          },
+          {
+            "title": "Highlights (Foils/Ombre/Balayage)",
+            "price": "From $120 and up",
+            "description": "The price on this service varies depending on the amount of hair and the desired effect. Your Colour Designer will quote a price before they begin the work."
+          },
+          {
+            "title": "Corrective Colour",
+            "price": "- Price Quoted -",
+            "description": "With corrective colour, the goal is to fix the problem and leave the hair in a beautiful, healthy condition. Corrective colour is a process that takes time, and occasionally will require more than one session to reach the desired result. All corrective colour work requires a consultation prior to the appointment date. A price for service will be provided at that time."
+          },
+          {
+            "title": "Blonding",
+            "price": "From $100 and up",
+            "description": "A consultation prior to the appointment date is required. A price for service will be provided at that time."
+          }
+        ],
+        "image": "img/color.jpg"
       },
       {
-        "name": "Broken Capillaries",
+        "name": "Texture",
         "id": 5,
-        "description": "",
-        "image": "img/cosmetic-revisions/brokencap.jpg"
-      },
-      {
-        "name": "Spider Veins",
-        "id": 6,
-        "description": "",
-        "image": "img/cosmetic-revisions/spiderveins.jpg"
-      },
-      {
-        "name": "White Heads",
-        "id": 7,
-        "description": "",
-        "image": "img/cosmetic-revisions/whiteheads.jpg"
-      },
-      {
-        "name": "Cholesterol deposits",
-        "id": 8,
-        "description": "",
-        "image": "img/cosmetic-revisions/chlordep.jpg"
+        "description": [
+          {
+            "title": "Straightening & Smoothing",
+            "price": "From $250",
+            "description": "Consultation for a price is determined by how much product is required for length of hair and hair type."
+          }
+        ],
+        "image": "img/texture.jpg"
       }
     ]
   },
   {
-    "name": "Services",
-    "description": "The Rush Salon has enough services to serve you and your family. Check them out below.",
+    "name": "Products",
+    "description": "At Rush Salon, we like to use the best products for our customers",
     "tabNum": 2,
     "options": [
       {
-        "name": "Woman's Haircuts",
+        "name": "",
         "id": 1,
         "description": "",
-        "image": "img/cosmetic-revisions/sunspots.jpg"
+        "image": "img/products/Kerastace.png"
       },
       {
-        "name": "Mens' Haircuts",
+        "name": "",
         "id": 2,
         "description": "",
-        "image": "img/cosmetic-revisions/skintag.jpeg"
+        "image": "img/products/loreal.jpeg"
       },
       {
-        "name": "Freckles",
+        "name": "",
         "id": 3,
         "description": "",
-        "image": "img/cosmetic-revisions/freckles.jpeg"
-      },
-      {
-        "name": "Ruby Points",
-        "id": 4,
-        "description": "",
-        "image": "img/cosmetic-revisions/ruby.jpg"
-      },
-      {
-        "name": "Broken Capillaries",
-        "id": 5,
-        "description": "",
-        "image": "img/cosmetic-revisions/brokencap.jpg"
-      },
-      {
-        "name": "Spider Veins",
-        "id": 6,
-        "description": "",
-        "image": "img/cosmetic-revisions/spiderveins.jpg"
-      },
-      {
-        "name": "White Heads",
-        "id": 7,
-        "description": "",
-        "image": "img/cosmetic-revisions/whiteheads.jpg"
-      },
-      {
-        "name": "Cholesterol deposits",
-        "id": 8,
-        "description": "",
-        "image": "img/cosmetic-revisions/chlordep.jpg"
+        "image": "img/products/shu.jpeg"
       }
     ]
   }

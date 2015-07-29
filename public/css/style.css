@@ -23,6 +23,27 @@ a:hover, a:visited, a:link, a:active {
   color: #26A69A;
 }
 
+#inner-header h1 {
+  font-size: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 600;
+  color: black;
+  letter-spacing: -5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: -10px;
+  position: relative;
+}
+
+#inner-header h5 {
+  font-size: 0.5em;
+  font-weight: 200;
+  color: black;
+  letter-spacing: -1px;
+  top: -50px;
+  position: relative;
+}
+
 .welcome {
   background-color: #26A69A;
   background-image: url("../img/photo-background.jpg");
@@ -50,35 +71,131 @@ a:hover, a:visited, a:link, a:active {
     color: #26A69A;
     margin-top: 10px;
     width: 200px; }
-  #catch-phrase #inner-catch-phrase p {
-    font-size: 18px; }
   #catch-phrase #inner-catch-phrase h1 {
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 100;
-    letter-spacing: -3px; }
+    font-size: 4em;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 600;
+    color: white;
+    letter-spacing: -5px;
+  }
+
+#catch-phrase #inner-catch-phrase h5 {
+  font-size: 2em;
+  font-weight: 200;
+  color: white;
+  letter-spacing: -1px;
+  top: -35px;
+  position: relative;
+}
+
+#catch-phrase #inner-catch-phrase p {
+  font-size: 1.5em;
+  color: white;
+}
 
 @media (max-width: 500px) {
-  #catch-phrase #inner-catch-phrase p {
-    font-size: 15px; }
   #catch-phrase #inner-catch-phrase h1 {
-    font-size: 60px; }
+    font-size: 2em;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 600;
+    color: white;
+    letter-spacing: -5 pxs;
+  }
+
+  #catch-phrase #inner-catch-phrase h5 {
+    font-size: 1em;
+    font-weight: 200;
+    color: white;
+    letter-spacing: -1px;
+    top: -35px;
+    position: relative;
+  }
+
+  #catch-phrase #inner-catch-phrase p {
+    font-size: 1.2em;
+    color: white;
+  }
 
   #catch-phrase {
     margin-top: 60px; } }
+
+#promotion {
+  background-image: url("../img/texture-light.jpg");
+  text-align: center;
+}
+
+#promotion p {
+  color: #26A69A;
+  font-size: 5em;
+  font-weight: 700;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#promotion h1 {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 3em;
+}
+
+#promotion h2 {
+  color: white;
+  font-size: 1.6em;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+@media (max-width: 400px) {
+  #promotion h1 {
+    font-size: 2em;
+  }
+
+  #promotion h2 {
+    font-size: 1em;
+  }
+
+  #promotion p {
+    font-size: 3em;
+  }
+}
+
 #about {
-  padding-top: 50px;
+  padding-top: 10px;
   min-height: 100vh;
   position: relative;
   background-color: #F6F6F6;
   z-index: 10;
   box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.2); }
-  #about .card-content {
-    color: #757575;
-    font-size: 1em; }
-  #about .card-title {
-    color: #26A69A;
+
+#about h1 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#about p {
+  font-size: 1.2em;
+}
+
+#about .colored {
+  background-color: black;
+}
+
+#about .colored h1 {
+  color: white;
+}
+
+#about .colored p {
+  color: white;
+}
+
+@media (max-width: 400px) {
+  #about h1 {
+    font-size: 2em;
   }
+}
 
 #services {
   min-height: 100vh; }
@@ -105,18 +222,35 @@ a:hover, a:visited, a:link, a:active {
     font-weight: 100; }
   #services .main-tabs .indicator {
     width: 50%; }
+
+#services small {
+  font-size: 0.9em;
+}
   @media (max-width: 500px) {
     #services h1 {
-      font-size: 40px; }
+      font-size: 2em;
+    }
     #services .tabs a {
-      font-size: 11px; } }
+      font-size: 1.1em;
+    }
+  }
 
 #service-img {
   text-align: center; }
 
 .service-2 .card-content {
   background-color: rgba(0, 0, 0, 0.2) !important;
-  height: 150px !important;
+  min-height: 200px !important;
+}
+
+.service2 .card-content {
+  background-color: transparent !important;
+}
+
+@media (max-width: 400px) {
+  .service2 img {
+    height: 150px !important;
+  }
 }
 
 #gallery {
@@ -125,6 +259,20 @@ a:hover, a:visited, a:link, a:active {
     font-weight: 100;
     color: #26A69A;
   }
+
+#stylists {
+  min-height: 100vh;
+  background-color: white;
+}
+
+#stylists h1 {
+  font-weight: 200;
+  color: #26A69A;
+}
+
+#stylists img {
+  width: 350px;
+}
 
 #testimonials {
   min-height: 100vh;
